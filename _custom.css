@@ -65,18 +65,20 @@
 	grid-row: span 2;
 }
 
-header #intro {
-    background-image: url("https://mdbootstrap.com/img/new/fluid/city/018.jpg");
-    height: 100vh;
-  }
+header {
+    height: 900px;
+    width: 100vw;
+    background: black;
+    overflow: hidden;
+    background: #C33764;  /* fallback colour. Make sure this is just one solid colour. */
+    /* background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url("images/background-image-banner.jpg");
+    background-size: cover; */
+    background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(167, 177, 164, 0.8)), url("images/home-the-lake.webp");
+    background-size: cover;
+}
 
-  /* Height for devices larger than 576px */
-  @media (min-width: 992px) {
-    #intro {
-      margin-top: -58.59px;
-    }
-  }
-
-  .navbar .nav-link {
-    color: #fff !important;
-  }
+.user-img {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
