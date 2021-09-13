@@ -64,3 +64,19 @@
 	grid-column: span 2;
 	grid-row: span 2;
 }
+
+header #intro {
+    background-image: url("https://mdbootstrap.com/img/new/fluid/city/018.jpg");
+    height: 100vh;
+  }
+
+  /* Height for devices larger than 576px */
+  @media (min-width: 992px) {
+    #intro {
+      margin-top: -58.59px;
+    }
+  }
+
+  .navbar .nav-link {
+    color: #fff !important;
+  }
