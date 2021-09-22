@@ -49,16 +49,20 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5,
     cursor: pointer;
 }
   
-.img-fluid:hover {
-    opacity: 0.5;
-    color: black;
-    cursor: pointer;
-}
 
 .what3 {
   color: red !important;
   font-size: 24px !important;
 }
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50% 50% 20% 20%;
+  display: none;
+  }
+  
 .ftco-navbar-light {
   background: transparent !important;
   position: absolute;
@@ -1109,8 +1113,8 @@ textarea.form-control {
 
 .block-21 .blog-img {
   display: block;
-  height: 80px;
-  width: 80px; }
+  height: 100px;
+  width: 100px; }
 
 .block-21 .text {
   width: calc(100% - 90px); }
@@ -1134,6 +1138,11 @@ textarea.form-control {
 
       /* my-masonry */
 
+.ftco-gallery .grid-wrapper .gallery-wrap {
+  width: 100%;
+  height: 100%;
+      }
+
 .grid-wrapper {
   display: grid;
   grid-gap: 10px;
@@ -1151,7 +1160,30 @@ textarea.form-control {
         grid-column: span 2;
         grid-row: span 2;
       }
-.grid-wrapper > div > img {
+
+  @media (max-width: 575.98px){
+
+    .grid-wrapper {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-auto-rows: 150px;
+    }
+
+        .grid-wrapper .wide {
+          grid-column: span 1;
+        }
+
+        .grid-wrapper .tall {
+          grid-row: span 1;
+        }
+      
+        .grid-wrapper .big {
+
+          grid-column: span 1;
+          grid-row: span 1;
+        }
+
+      }
+/* .grid-wrapper > div > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1160,24 +1192,18 @@ textarea.form-control {
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
-}
+} */
       
-  .grid-wrapper > div > img:hover {
+  /* .grid-wrapper > div > img:hover {
       -webkit-transform: scale(0.98);
       transform: scale(0.98); 
       opacity: 0.5;
       cursor: zoom-in;
-      }
+      } */
 
       /* Button back to top */
 
-      #btn-back-to-top {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        border-radius: 50% 50% 20% 20%;
-        display: none;
-        }
+   
 
     .accordion-body {
       background: #f9f9f9;
@@ -1198,5 +1224,3 @@ textarea.form-control {
       width: 60px;
       height: 60px;
     }
-    
-    
