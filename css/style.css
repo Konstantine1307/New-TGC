@@ -21,10 +21,7 @@ a, button {
   transition: .3s all ease;
   color: #c5a880;
   text-decoration: none; }
-  a:hover, a:focus, button:hover, button:focus {
-    text-decoration: none;
-    color: #c5a880;
-    outline: none !important; }
+
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5,
 .h1, .h2, .h3, .h4, .h5 {
@@ -37,19 +34,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5,
   color: #c5a880 !important; }
 
 
-
-.my-img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
   
-.my-img:hover {
-    opacity: 0.5;
-    cursor: pointer;
-}
-  
-
 .what3 {
   color: red !important;
   font-size: 24px !important;
@@ -122,8 +107,15 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5,
     }  
   } 
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-      color: #c5a880;
+      color: #ffd9a4;
+      transform: scale(1.2);
        }
+
+    @media (max-width:575.98px) {
+      .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
+        transform: none;
+         }
+    }
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link span {
       position: relative;
       display: block;
@@ -137,8 +129,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5,
         padding-right: 10px;
         padding-bottom: 1rem;
         padding-top: 0;
-        font-size: 
-        color: #fff; } }
+       
+        color: #fff; }}
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link.active {
       color: white !important;
       font-size: 15px !important;
@@ -183,17 +175,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5,
     color: #fff;
     display: block;
     line-height: 1.1; }
-    .navbar-brand span small, .navbar-brand span .small {
-      display: block;
-      font-size: 12px;
-      color: #fff;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1px; }
-  .navbar-brand .flaticon {
-    font-size: 40px;
-    color: #c5a880;
-    line-height: .7; }
+
 
 .hero-wrap {
   height: 100%;
@@ -322,56 +304,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5,
         border: 1px solid transparent !important;
         background: #c5a880 !important;
         color: #fff !important; }
-  .btn.btn-white {
-    background: #fff !important;
-    border: 1px solid #fff !important;
-    color: #000000 !important; }
-    .btn.btn-white:hover {
-      border: 1px solid #fff;
-      background: transparent;
-      color: #fff; }
-    .btn.btn-white.btn-outline-white {
-      border: 1px solid rgba(255, 255, 255, 0.7) !important;
-      background: transparent !important;
-      color: #fff !important; }
-      .btn.btn-white.btn-outline-white:hover {
-        border: 1px solid transparent !important;
-        background: #fff !important;
-        color: #000000 !important; }
-  .btn.btn-black {
-    background: #000000 !important;
-    border: 1px solid #000000 !important;
-    color: #fff !important; }
-    .btn.btn-black:hover {
-      border: 1px solid #000000;
-      background: transparent;
-      color: #000000; }
-    .btn.btn-black.btn-outline-black {
-      border: 1px solid #000000;
-      background: transparent;
-      color: #000000; }
-      .btn.btn-black.btn-outline-black:hover {
-        border: 1px solid transparent;
-        background: #000000;
-        color: #000000; }
-
-.aside-stretch {
-  background: #c5a880; }
-  .aside-stretch:after {
-    position: absolute;
-    top: 0;
-    right: 100%;
-    bottom: 0;
-    content: '';
-    width: 360%;
-    background: #c5a880; }
-  @media (max-width: 575.98px) {
-    .aside-stretch {
-      background: transparent; }
-      .aside-stretch:after {
-        background: transparent;
-        display: none; } }
-
+  
 .form-control {
   height: 45px;
   background: #fff;
@@ -423,77 +356,7 @@ textarea.form-control {
       .booking-form .form-wrap .icon2 span {
         font-size: 140px;
         opacity: .05; }
-  .booking-form .form-group {
-    position: relative;
-    margin-bottom: 0;
-    width: 100%;
-    border-left: 1px solid rgba(0, 0, 0, 0.05); }
-    @media (max-width: 575.98px) {
-      .booking-form .form-group {
-        margin-bottom: 0;
-        border: none; } }
-    .booking-form .form-group label {
-      font-weight: 700;
-      font-size: 12px;
-      color: #fff;
-      text-transform: uppercase;
-      margin-bottom: 10px;
-      letter-spacing: 1px; }
-    .booking-form .form-group .form-field {
-      position: relative;
-      display: block; }
-    .booking-form .form-group .form-control {
-      padding: 0;
-      padding-left: 25px;
-      display: block;
-      width: 100%;
-      height: inherit !important;
-      font-size: 16px;
-      border: none !important;
-      color: rgba(255, 255, 255, 0.4) !important;
-      background: transparent !important;
-      border-radius: 0; }
-      .booking-form .form-group .form-control::-webkit-input-placeholder {
-        color: rgba(255, 255, 255, 0.4) !important; }
-      .booking-form .form-group .form-control::-moz-placeholder {
-        color: rgba(255, 255, 255, 0.4) !important; }
-      .booking-form .form-group .form-control:-ms-input-placeholder {
-        color: rgba(255, 255, 255, 0.4) !important; }
-      .booking-form .form-group .form-control:-moz-placeholder {
-        color: rgba(0, 0, 0, 0.4) !important; }
-      .booking-form .form-group .form-control.btn {
-        font-size: 16px;
-        font-weight: 700;
-        text-transform: uppercase;
-        background: #c5a880 !important;
-        border: none !important;
-        color: #fff !important;
-        padding: 0 30px !important;
-        line-height: 1.4 !important;
-        border-radius: 0; }
-        @media (max-width: 991.98px) {
-          .booking-form .form-group .form-control.btn {
-            padding: 25px 20px !important; } }
-    .booking-form .form-group .select-wrap {
-      position: relative; }
-      .booking-form .form-group .select-wrap select {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none; }
-    .booking-form .form-group .icon {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      font-size: 16px;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-      color: rgba(255, 255, 255, 0.3);
-      width: 30px;
-      height: 30px; }
-      @media (max-width: 575.98px) {
-        .booking-form .form-group .icon {
-          left: 0; } }
+  
 
 .services {
   width: 100%;
@@ -637,6 +500,7 @@ textarea.form-control {
       opacity: 0.5;;
     }
     /* end of my style */
+
     .room-wrap:hover .text {
       background: #222222;
       color: rgba(255, 255, 255, 0.7); }
@@ -711,19 +575,6 @@ textarea.form-control {
     color: #fff;
     font-size: 50px;
     line-height: 1; }
-
-.about-author .bio {
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  display: block; }
-
-.about-author .desc {
-  width: calc(100% - 80px); }
-  .about-author .desc h3, .about-author .desc .h3 {
-    font-size: 30px;
-    font-weight: 400; }
 
 .ftco-section {
   padding: 4em 0;
@@ -901,11 +752,7 @@ textarea.form-control {
     .ftco-footer-social li a:hover {
       color: #c5a880; }
 
-#map {
-  width: 100%; }
-  @media (max-width: 767.98px) {
-    #map {
-      height: 300px; } }
+
 
 @-webkit-keyframes pulse {
   0% {
@@ -1105,8 +952,22 @@ textarea.form-control {
               margin-bottom: 0;
               border-bottom: none;
               padding-bottom: 0; }
-           
-             
+  
+              /* SIDEBAR - FACILITIES AND CATEGORIES ACCORDION SMALL AND MEDIA SCREENS */
+
+    .accordion-body {
+                background: #f9f9f9;
+              }
+    .accordion-body .card-body {
+                background: #f9f9f9;
+                border:none;
+              }
+          
+    .accordion-item .accordion-button {
+                font-size: 16px !important;
+                font-family: "Nunito", Arial, sans-serif;
+                padding: 20px;
+              }            
            
               
 .contactForm .label {
@@ -1145,7 +1006,7 @@ textarea.form-control {
 
 
 
-      /* my-masonry */
+  /* MASONRY */
 
 .ftco-gallery .grid-wrapper .gallery-wrap {
   width: 100%;
@@ -1192,44 +1053,11 @@ textarea.form-control {
         }
 
       }
-/* .grid-wrapper > div > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 5px;
-  -webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-} */
-      
-  /* .grid-wrapper > div > img:hover {
-      -webkit-transform: scale(0.98);
-      transform: scale(0.98); 
-      opacity: 0.5;
-      cursor: zoom-in;
-      } */
-
-      /* Button back to top */
-
-   
-
-    .accordion-body {
-      background: #f9f9f9;
-    }
-    .accordion-body .card-body {
-      background: #f9f9f9;
-      border:none;
-    }
-
-    .accordion-item .accordion-button {
-      font-size: 16px !important;
-      font-family: "Nunito", Arial, sans-serif;
-      padding: 20px;
-    }
+   /* SOCIAL BUTTONS contact.html page */
 
     .social-buttons a{
       font-size: 24px;
       width: 60px;
       height: 60px;
     }
+
