@@ -33,12 +33,13 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5,
 .text-primary {
   color: #c5a880 !important; }
 
-
   
 .what3 {
   color: red !important;
   font-size: 24px !important;
 }
+
+/* Button back to top with js */
 
 #btn-back-to-top {
   position: fixed;
@@ -47,7 +48,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5,
   border-radius: 50% 50% 20% 20%;
   display: none;
   }
-  
+
+/* Navbar in the header sections */
+
 .ftco-navbar-light {
   background: transparent !important;
   position: absolute;
@@ -176,6 +179,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5,
     display: block;
     line-height: 1.1; }
 
+/* Hero wrap  on the header section */
 
 .hero-wrap {
   height: 100%;
@@ -250,10 +254,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5,
             color: #c5a880; }
             .hero-wrap .slider-text .breadcrumbs span a:hover i, .hero-wrap .slider-text .breadcrumbs span a:focus i {
               color: #c5a880; }
-    .hero-wrap .slider-text .bread {
-      font-weight: 400;
-      color: #fff;
-      font-size: 70px; }
+   
+/* General background colors and buttons */
 
 .bg-light {
   background: #f8f8f8 !important; }
@@ -305,6 +307,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5,
         background: #c5a880 !important;
         color: #fff !important; }
   
+/* Contact.html contact form */
+
 .form-control {
   height: 45px;
   background: #fff;
@@ -335,28 +339,7 @@ textarea.form-control {
 .ftco-booking {
   margin-top: -80px; }
 
-.booking-form {
-  width: 100%;
-  background: #222222;
-  -webkit-box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.06);
-  -moz-box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.06);
-  box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.06);
-  z-index: 0;
-  position: relative; }
-  .booking-form .form-wrap {
-    position: relative;
-    overflow: hidden; }
-    .booking-form .form-wrap .icon2 {
-      position: absolute;
-      top: -30px;
-      left: 50%;
-      -webkit-transform: translateX(-90%);
-      -ms-transform: translateX(-90%);
-      transform: translateX(-90%); }
-      .booking-form .form-wrap .icon2 span {
-        font-size: 140px;
-        opacity: .05; }
-  
+/* Icons index.html with services */
 
 .services {
   width: 100%;
@@ -409,6 +392,8 @@ textarea.form-control {
       color: #fff; }
     .services:hover .text h2, .services:hover .text .h2 {
       color: #fff; }
+
+/* Cottages descriptions section with images in index.html, the-barn.html and the-cottage.html */
 
 .room-wrap {
   background: #fff;
@@ -474,21 +459,7 @@ textarea.form-control {
         list-style: none; }
         .room-wrap .text ul li span {
           margin-right: 5px; }
-    .room-wrap .text .price {
-      color: #c5a880;
-      text-transform: uppercase;
-      font-size: 14px;
-      font-weight: 700; }
-      .room-wrap .text .price small, .room-wrap .text .price .small {
-        font-size: 14px; }
-    .room-wrap .text .btn-custom {
-      color: #222222;
-      text-transform: uppercase;
-      font-size: 14px;
-      font-weight: 700;
-      border: 1px solid rgba(0, 0, 0, 0.05);
-      padding: 5px 10px;
-      border-radius: 2px; }
+
   .room-wrap:hover {
     -webkit-box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.08);
     -moz-box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.08);
@@ -499,7 +470,7 @@ textarea.form-control {
     .room-wrap:hover img {
       opacity: 0.5;;
     }
-    /* end of my style */
+ 
 
     .room-wrap:hover .text {
       background: #222222;
@@ -512,12 +483,7 @@ textarea.form-control {
     .room-wrap:hover .img:after {
       opacity: .5; }
 
-.room-detail {
-  width: 100%;
-  height: 500px; }
-
-
-
+/* Room section with carousel highlights features */
 .list {
   padding: 0; }
   .list li {
@@ -525,10 +491,19 @@ textarea.form-control {
     .list li span {
       color: #222222; }
 
+/* Table with hearts -Reviews and Ratings */
+
 .rate i {
   color: #c5a880;
   margin: 0 4px; }
 
+.blog-img {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+/* Video section */
 
 .vid-section {
   height: 600px;
@@ -588,52 +563,14 @@ textarea.form-control {
 .ftco-no-pt {
   padding-top: 0 !important; }
 
-
 .ftco-no-pb {
   padding-bottom: 0 !important; }
 
 .ftco-bg-dark {
-  background: #3c312e; }
+  background: #222222; }
 
-.ftco-intro {
-  color: rgba(255, 255, 255, 0.8);
-  z-index: 0;
-  position: relative;
-  padding: 6em 0; }
-  .ftco-intro .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: '';
-    opacity: .9;
-    background: #222222;
-    z-index: -1; }
-  @media (max-width: 767.98px) {
-    .ftco-intro {
-      background-position: center center !important; } }
-  .ftco-intro .subheading {
-    font-size: 13px;
-    display: block;
-    margin-bottom: 5px;
-    color: #c5a880;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 2px; }
-  .ftco-intro h1, .ftco-intro .h1 {
-    color: #fff;
-    font-weight: 400; }
-  .ftco-intro h2, .ftco-intro .h2 {
-    color: #fff;
-    font-weight: 400;
-    font-size: 40px !important; }
-    @media (max-width: 575.98px) {
-      .ftco-intro h2, .ftco-intro .h2 {
-        font-size: 20px; } }
-    .ftco-intro h2 span, .ftco-intro .h2 span {
-      background: #c5a880; }
 
+/* Gallery and masonry sections index.html the-barn.html the-cottage.html */
 .ftco-gallery .gallery-wrap {
   width: 100%;
   height: 200px;
@@ -673,6 +610,8 @@ textarea.form-control {
     opacity: .3; }
   .ftco-gallery .gallery-wrap:hover .icon {
     opacity: 1; }
+
+/* Footer */
 
 .ftco-footer {
   padding: 4em 0 0 0;
@@ -808,6 +747,8 @@ textarea.form-control {
   background-repeat: no-repeat;
   background-position: center center; }
 
+/* Testimonmy seciton */
+
 .testimony-section {
   position: relative;
   z-index: 0; }
@@ -891,6 +832,8 @@ textarea.form-control {
 .ftco-about-section .img {
   height: 230px; }
 
+/* About sections index.html about.html */
+
 .ftco-about-section .f-services {
   width: 100%;
   padding: 0; }
@@ -922,11 +865,18 @@ textarea.form-control {
   .ftco-about-section .f-services:hover .text h3, .ftco-about-section .f-services:hover .text .h3 {
     color: #fff; }
 
+/* Sidebars the-barn.html the-cottage.html */
+
 .sidebar-box {
       margin-bottom: 30px;
       padding: 10px;
       font-size: 15px;
       width: 100%; }
+.sidebar-box .blog-img{
+    display: block;
+    height: 100px;
+    width: 100px; 
+}
 .sidebar-box *:last-child {
         margin-bottom: 0; }
 .sidebar-box h3, .sidebar-box .h3 {
@@ -969,43 +919,6 @@ textarea.form-control {
                 padding: 20px;
               }            
            
-              
-.contactForm .label {
-  color: #c5a880;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 600; }
-
-.contactForm .form-control {
-  border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 0; }
-
-.block-21 .blog-img {
-  display: block;
-  height: 100px;
-  width: 100px; }
-
-.block-21 .text {
-  width: calc(100% - 90px); }
-  .block-21 .text .heading {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 0; }
-    .block-21 .text .heading a {
-      color: #000000; }
-      .block-21 .text .heading a:hover, .block-21 .text .heading a:active, .block-21 .text .heading a:focus {
-        color: #c5a880; }
-  .block-21 .text .meta > div {
-    display: inline-block;
-    font-size: 12px;
-    margin-right: 5px; }
-    .block-21 .text .meta > div a {
-      color: gray;
-      color: #c5a880; }
-
-
-
   /* MASONRY */
 
 .ftco-gallery .grid-wrapper .gallery-wrap {
