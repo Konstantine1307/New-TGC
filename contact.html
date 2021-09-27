@@ -62,7 +62,7 @@
 
      <!-- Header with background image and Heading -->
 
-     <section class="hero-wrap">
+     <section class="hero-wrap hero-wrap-2">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -71,8 +71,8 @@
                     class="fa fa-chevron-right"></i></a></span> <span>Contact <i class="fa fa-chevron-right"></i></span></p>
             <h1 class="mb-4">Contact Us</h1>
     
-            <p><a href="https://via.eviivo.com/TresowesTR13" target="_blank" rel="noreferrer" class="btn btn-primary p-4 py-3">Book Your Stay<span
-                  class="ion-ios-arrow-round-forward"></span></a> </p>
+            <!-- <p><a href="https://via.eviivo.com/TresowesTR13" target="_blank" rel="noreferrer" class="btn btn-primary p-4 py-3">Book Your Stay<span
+                  class="ion-ios-arrow-round-forward"></span></a> </p> -->
           </div>
         </div>
       </div>
@@ -81,88 +81,104 @@
   
 <!-- INTRO BANNER WITH WEATHER FORECAST EMBED -->
 
-  <section class="ftco-bg-dark ftco-no-pt ftco-no-pb">
-    <div class="overlay"></div>
-    <div class="container-xl py-5">
-      <div class="row justify-content-center">
-        <a class="weatherwidget-io" href="https://forecast7.com/en/50d10n5d39/praa-sands/" data-label_1="PRAA SANDS"
-          data-label_2="WEATHER" data-theme="original" data-basecolor="rgba(248, 248, 248, 0)">PRAA SANDS WEATHER</a>
-        <div class="col-lg-10 col-xl-8">
-          <div class="row">
-            <div class="col-md-8 d-flex align-items-center">
-              <div>
-              </div>
-            </div>
-          </div>
-        </div>
+<section class="ftco-section ftco-no-pb ftco-no-pt ftco-booking py-5">
+  <div class="container">
+    <div class="row">
+    <div class="col-md-12 mt-sm-3 ftco-bg-dark pe-sm-2 pe-md-0"> 
+      <div class="row g-0">
+      <div class="col-md-8 py-md-5 px-4 text-center">
+         <!-- <p class="text-primary">&quot; From the moment we first saw Tresowes Green Cottage we
+        knew we had found a gem and it was a place we wanted to both to live and to share with
+        others.&quot;</p>  -->
+        <h2 class="mb-md-0 mb-4 text-white fs-3">We are open for any questions, suggestion or a chat.</h2>   
+      </div>
+    <div class="col-md-4 d-flex pb-2 px-4 pb-md-0 px-md-0 justify-content-center">
+        <a href="https://via.eviivo.com/TresowesTR13" target="_blank" rel="noreferrer"
+        class="d-flex align-items-center align-self-stretch btn btn-primary"><span>Book Your
+          Stay</span></a>
+      </div>
       </div>
     </div>
+    </div>
+  </div>
   </section>
 
   <!-- CONTACT FORM -->
 
   <section class="ftco-section bg-light">
     <div class="container-xl">
-      <div class="row no-gutters justify-content-center">
+      <div class="row">
         <div class="col-md-12">
           <div class="wrapper">
             <div class="row g-0">
-              <div class="col-lg-6">
-                <div class="contact-wrap w-100 p-md-5 p-4">
+              <div class="col d-flex justify-content-center">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22785.989971107112!2d-5.386913957656304!3d50.12176533106502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486ad965755ad565%3A0xeb8e49e608fbc47d!2sTresowes%20Green%20Cottage!5e0!3m2!1sen!2suk!4v1621503125312!5m2!1sen!2suk"
+                  width="1300px" height="600" style="border:0;" allowfullscreen loading="lazy"
+                  title="google maps">
+                </iframe>
+              </div>
+              <div class="col mt-4">
+                <div class="dbox w-100 d-flex justify-content-end">
+                  <div class="text">
+                    <p>
+                      <a href="https:what3words.com/escapades.twit.tribes/"><span class="what3">///</span><span class="text-dark">escapades.twit.tribes</span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="contact-wrap w-100 p-2">
                   <h2>Contact us</h2>
-                  <p class="mb-4">We're open for any suggestion or just to have a chat.</p>
+                  <!-- <p class="mb-4">We're open for any suggestion or just to have a chat.</p> -->
                   <div class="row mb-4">
                     <div class="col-md-10">
                       <div class="dbox w-100 d-flex align-items-start">
-                        <div class="text">
+                        <!-- <div class="text">
                           <p>Tresowes Green Cottage, Tresowes, Ashton, Helston TR13 9SY Cornwall, UK
                           </p>
-                        </div>
+                        </div> -->
                       </div>
                     </div>
                    
-                    <div class="col-md-4">
-                      <div class="dbox w-100 d-flex align-items-start">
-                        <div class="text">
-                          <p>
-                            <a href="https:what3words.com/escapades.twit.tribes/"><span class="what3">///</span><span class="text-dark">escapades.twit.tribes</span></a>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
+                    
                   </div>
-                  <form id="contactForm" name="contactForm" class="contactForm">
+                  <form id="contactForm" name="contactForm" class="contactForm" action="mail.php" method="post">
                     <div class="row">
                       <div class="col-md-12">
                         <div class="form-group">
+                          <label for="name" class="form-label"></label>
                           <input type="text" class="form-control" name="name" id="name" placeholder="Name">
                         </div>
                       </div>
                       <div class="col-md-12">
                         <div class="form-group">
+                          <label for="email" class="form-label"></label>
                           <input type="email" class="form-control" name="email" id="email" placeholder="Email">
                         </div>
                       </div>
                       <div class="col-md-12">
                         <div class="form-group">
+                          <label for="subject" class="form-label"></label>
                           <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
                         </div>
                       </div>
                       <div class="col-md-12 mb-5">
                         <div class="form-group">
+                          <label for="message" class="form-label"></label>
                           <textarea name="message" class="form-control" id="message" cols="30" rows="4"
                             placeholder="Create a message here"></textarea>
                         </div>
                       </div>
-                      <div class="col-md-12">
+                      <div class="col-md-12 text-start text-md-end">
                         <div class="form-group">
-                          <input type="submit" value="Send Message" class="btn btn-primary">
+                          <input type="submit" value="Send Message" class="btn btn-primary px-5">
                           <div class="submitting"></div>
                         </div>
                       </div>
                     </div>
                   </form>
-                  <div class="w-100 social-media mt-5">
+                  <div class="w-100 social-media mt-3">
                     <h3>Follow us here</h3>
                     <div class="social-buttons d-flex">
                       
@@ -174,12 +190,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6 d-flex align-items-stretch">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22785.989971107112!2d-5.386913957656304!3d50.12176533106502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486ad965755ad565%3A0xeb8e49e608fbc47d!2sTresowes%20Green%20Cottage!5e0!3m2!1sen!2suk!4v1621503125312!5m2!1sen!2suk"
-                  width="600" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
-                  title="google maps"></iframe>
-              </div>
+           
             </div>
           </div>
         </div>
