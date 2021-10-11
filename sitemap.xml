@@ -6,7 +6,12 @@
 		<lastmod>2021-10-11</lastmod>
 	</url>
 	<url>
-		<loc>https://www.tresowescottages.com/the-cottage.html</loc>
+		<loc>https://www.tresowescottages.com/about.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2021-10-11</lastmod>
+	</url>
+	<url>
+		<loc>https://www.tresowescottages.com/privacy-policy.html</loc>
 		<priority>0.67</priority>
 		<lastmod>2021-10-09</lastmod>
 	</url>
@@ -16,14 +21,9 @@
 		<lastmod>2021-10-09</lastmod>
 	</url>
 	<url>
-		<loc>https://www.tresowescottages.com/privacy-policy.html</loc>
+		<loc>https://www.tresowescottages.com/the-cottage.html</loc>
 		<priority>0.67</priority>
 		<lastmod>2021-10-09</lastmod>
-	</url>
-	<url>
-		<loc>https://www.tresowescottages.com/about.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2021-10-11</lastmod>
 	</url>
 	<url>
 		<loc>https://www.tresowescottages.com/non-active/contact.html</loc>
