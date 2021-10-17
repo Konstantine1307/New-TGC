@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
-
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden !important;
+}
 body {
   font-family: "Nunito", Arial, sans-serif;
   background: #f9f9f9;
@@ -44,7 +48,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5,
 #btn-back-to-top {
   position: fixed;
   top: 40px;
-  right: 20px;
+  right: 30px;
   border-radius: 50% 50% 20% 20%;
   display: none;
   opacity: 0.5;
