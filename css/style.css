@@ -10,7 +10,8 @@ body {
   font-size: 16px;
   line-height: 1.8;
   font-weight: 400;
-  color: #6e6e6e; }
+  color: #6e6e6e; 
+  overflow-x: hidden !important;}
 
   header {
     background: #c5a880;  /* fallback colour. Make sure this is just one solid colour. */
