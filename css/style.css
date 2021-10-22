@@ -42,7 +42,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5,
 
 #btn-back-to-top {
   position: fixed;
-  top: 40px;
+  bottom: 40px;
   right: 30px;
   border-radius: 50% 50% 20% 20%;
   display: none;
@@ -692,7 +692,17 @@ textarea.form-control {
     .ftco-footer-social li a:hover {
       color: #c5a880; }
 
+  /* Messenger link in footer */
+ 
+  .fa-facebook-messenger {
+    font-size: 45px !important;
+    border-radius: 50%;
+    animation: pulse 3s infinite;
+    -webkit-animation: pulse 3s infinite;
+    -o-animation: pulse 3s infinite;
+    -moz-animation: pulse 3s infinite;
 
+  }
 
 @-webkit-keyframes pulse {
   0% {
@@ -963,11 +973,6 @@ textarea.form-control {
           grid-row: span 1;
         }
       }
-   /* SOCIAL BUTTONS contact.html page */
+   
 
-    .social-buttons a{
-      font-size: 24px;
-      width: 60px;
-      height: 60px;
-    }
-
+   

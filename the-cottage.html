@@ -41,35 +41,6 @@
 
 <body>
 
-<!-- Messenger Chat plugin Code -->
-<div id="fb-root"></div>
-
-<!-- Your Chat plugin code -->
-<div id="fb-customer-chat" class="fb-customerchat">
-</div>
-
-<script>
-  var chatbox = document.getElementById('fb-customer-chat');
-  chatbox.setAttribute("page_id", "428219423895772");
-  chatbox.setAttribute("attribution", "biz_inbox");
-
-  window.fbAsyncInit = function () {
-    FB.init({
-      xfbml: true,
-      version: 'v12.0'
-    });
-  };
-
-  (function (d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-
-</script>
-
 <!-- Nav Bar with logo and links to the other pages -->
 <header class="header" style="background-image: url('images/the-cottage-exterior.webp');">     
   <div class="navbar-container">
@@ -593,7 +564,12 @@
       </div>
       <div class="col-md-6 col-lg">
         <div class="ftco-footer-widget mb-4">
-          <h2 class="ftco-heading-2">Have a Question?</h2>
+          <div class="d-flex justify-content-between">
+            <h2 class="ftco-heading-2">Contact Us</h2>
+            <a href="https://m.me/428219423895772" aria-label="Facebook messenger">
+              <span class="fab fa-facebook-messenger me-5"></span>
+            </a>
+          </div>
           <div class="block-23 mb-3">
             <ul>
               <li><span class="icon fa fa-map marker"></span><span class="text">Tresowes Green Cottage, Tresowes,
