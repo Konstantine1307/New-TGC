@@ -3,12 +3,17 @@
 	<url>
 		<loc>https://www.tresowesgreencottage.com</loc>
 		<priority>1.00</priority>
-		<lastmod>2021-12-06</lastmod>
+		<lastmod>2022-04-06</lastmod>
 	</url>
 	<url>
-		<loc>https://www.tresowesgreencottage.com/the-cottage.html</loc>
+		<loc>https://www.tresowesgreencottage.com/about.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2021-10-22</lastmod>
+		<lastmod>2022-04-06</lastmod>
+	</url>
+	<url>
+		<loc>https://www.tresowesgreencottage.com/privacy-policy.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2022-04-04</lastmod>
 	</url>
 	<url>
 		<loc>https://www.tresowesgreencottage.com/the-barn.html</loc>
@@ -16,13 +21,8 @@
 		<lastmod>2021-10-22</lastmod>
 	</url>
 	<url>
-		<loc>https://www.tresowesgreencottage.com/privacy-policy.html</loc>
+		<loc>https://www.tresowesgreencottage.com/the-cottage.html</loc>
 		<priority>0.50</priority>
 		<lastmod>2021-10-22</lastmod>
-	</url>
-	<url>
-		<loc>https://www.tresowesgreencottage.com/about.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2021-12-06</lastmod>
 	</url>
 </urlset>
