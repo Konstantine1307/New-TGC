@@ -13,7 +13,7 @@ body {
   color: #6e6e6e;}
 
   header {
-    /* background: #c5a880;  fallback colour. Make sure this is just one solid colour. */
+    background: #c5a880;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
