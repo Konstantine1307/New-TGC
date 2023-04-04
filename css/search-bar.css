@@ -1,0 +1,108 @@
+/*STYLING THE SEARCH BAR */
+.ev-searchbox {
+	/*Search Bar font family*/
+	font-family: Helvetica, Sans-Serif;
+	/*Search Bar background colour*/
+	background-color: #ffffff;
+	/*Search Bar inner space*/
+	padding: 10px;
+	/*Search Bar width*/
+	width: auto;
+	/*Search Bar shadow, RGBa black colour colour. Opacity set to 25%*/
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+	display: flex;
+}
+
+.ui-widget-header {
+    background: #ffffff;
+}
+
+/*STYLING THE FIELD HEADERS*/
+.ev-searchbox .ev-label {
+	display: block;
+	/*Space below the field names*/
+	margin: 0 0 3px 3px;
+	/*Font size for the field names*/
+	font-size: 16px;
+	
+}
+
+/*STYLING THE INPUT FIELDS*/
+.ev-searchbox .ev-input {
+	/*Input fields font size*/
+	font-size: 16px;
+	margin: 0;
+	/*Input fields inner spacing*/
+	padding: 12px;
+	width: 100%;
+	box-sizing: border-box;
+	/*Input fields border colour*/
+	border: 1px solid #ededed;
+	border-radius: 0px;
+}
+
+
+.ev-searchbox .ev-select {
+	/*Input fields font size*/
+	font-size: 16px;
+	margin: 0;
+	/*Input fields inner spacing*/
+	padding: 16px;
+	width: 100%;
+	box-sizing: border-box;
+	/*Input fields border colour*/
+	border: 1px solid #ededed;
+	border-radius: 0px;
+}
+
+.ev-searchbox .ev-options {
+	margin: 0;
+	display: inline-block;
+	/*Input dates field width*/
+	width: 200px;
+}
+/*BOOKING BUTTON STYLING*/
+/* .ev-searchbox .ev-button { */
+	/*Button Text colour*/
+	/* color: #000; */
+	/*Button Background colour*/
+	/* background-color: #c5a880; */
+	/*Button inner spacing*/
+	/* padding: 6px 12px; */
+	/*Button Font-size*/
+	/* font-size: 14px; */
+	/*Button Font-weight (thickness) */
+	/* font-weight: 500;
+	text-align: center;
+	margin: 0;
+    margin-left: 10px;
+	cursor: pointer;
+	border-radius: 0;
+	border: none;
+	width: auto; */
+/* } */
+/*STYLING the Number of Nights message which appears after guests select dates*/
+.ev-searchbox .s-ev-num-nights {
+	/*Font size*/
+	font-size: 14px;
+	padding-bottom: 6px;
+	/*Font colour*/
+	color: #708090;
+}
+
+.ev-searchbox .ev-invalid {
+	/*Styling how user errors are flagged: add red border if mandatory input fields are empty*/
+	border: 1px solid rgb(255, 0, 0);
+}
+.mod-options {
+	display: inline-block;
+}
+
+@media  (max-width: 479.98px) {
+	.ev-searchbox {
+		padding-left: 40%;
+		padding-right: 40%;
+		
+	}
+}
+

@@ -38,6 +38,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 	<!-- <link rel="stylesheet" href="css/aos.css"> -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/search-bar.css">
 	<link rel="stylesheet" href="css/style.css">
 	
 
@@ -86,12 +87,11 @@
 									class="fa fa-chevron-right"></i></span></p>
 						<h1 class="mb-0">About Us</h1>
 						<p>
-							<a href="#about-start" class="btn btn-primary p-5 py-3">Take A Tour</a>
+							<a href="https://via.eviivo.com/TresowesTR13" class="btn btn-primary p-5 py-3">Book your stay</a>
 						</p>
 					</div>
 				</div>
 			</div>
-	
 		</section>
 	</header>
 
@@ -99,26 +99,70 @@
 
 	<section class="ftco-section ftco-no-pb ftco-no-pt ftco-booking">
 		<div class="container">
-		  <div class="row">
-			<div class="col-md-12 mt-sm-3 ftco-bg-dark pe-sm-2 pe-md-0"> 
+		  <div class="row mx-auto">
+			<div class="col-md-12 mt-sm-3 ftco-bg-dark px-2 pb-2"> 
 			  <div class="row g-0">
-				<div class="col-md-8 py-md-3 py-xxl-5 px-4 text-center text-sm-start">
+				<div class="col-md-10 py-md-2 py-xxl-3 px-4 text-center text-sm-start">
 				   <p class="text-primary">&quot; From the moment we first saw Tresowes Green Cottage we
 					knew we had found a gem and it was a place we wanted to both to live and to share with
 					others.&quot;</p> 
-					<h2 class="mb-md-0 mb-4 text-white">Find Your Best Cottage</h2>   
+					<h2 class="mb-md-0 mb-4 text-white text-sm-start text-md-end">Find Your Best Cottage</h2>   
 				</div>
-			<div class="col-md-4 d-flex pb-2 px-4 pb-md-0 px-md-0 justify-content-center">
+			<!-- <div class="col-md-4 d-flex pb-2 px-4 pb-md-0 px-md-0 justify-content-center">
 				  <a href="https://via.eviivo.com/TresowesTR13" target="_blank" rel="noreferrer"
 					class="d-flex align-items-center align-self-stretch btn btn-primary"><span>Book Your
 					  Stay</span></a>
-				</div>
+				</div> -->
+			  </div>
+			   <!-- This is the sample code for a classic Search Bar widget, that will be pointing your website to the eviivo Booking Engine.  The Search Bar will need to be placed in the desired space in your website. -->
+			   <div class="ev-searchbox pb-2 pb-md-0 justify-content-center">
+				<form id="ev-availabilitySearchResults" action="https://via.eviivo.com/TresowesTR13" method="GET"
+				  name="availabilitySearchResults">
+				  <div class="ev-startDate ev-options">
+					<label for="startdate" class="ev-label">Arrival</label>
+					<input id="startdate" type="text" name="n" value="" class="ev-input" />
+					<input id="startdate1" type="hidden" name="startdate" value="" />
+				  </div>
+				  <div class="ev-endDate ev-options">
+					<label for="enddate" class="ev-label">Departure</label>
+					<input id="enddate" type="text" name="b" value="" class="ev-input" />
+					<input id="enddate1" type="hidden" name="enddate" value="" />
+				  </div>
+				  <div class="mod-options">
+					<div class="ev-adults ev-options">
+					  <label for="adults1" class="ev-label">Adults</label>
+					  <select name="adults1" class="ev-select">
+						<option value="1">1</option>
+						<option value="2" selected="selected">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+					  </select>
+					</div>
+					<div class="ev-children ev-options">
+					  <label for="children1" class="ev-label">Children</label>
+					  <select name="children1" class="ev-select">
+						<option selected="selected" value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					  </select>
+					</div>
+				  </div>
+				  <div class="s-ev-num-nights d-md-none"></div>
+				  <input class="ev-button btn btn-primary mt-3 mt-md-0 mt-lg-3 mt-xl-0 py-3 px-4" value="CHECK AVAILABILITY"
+					type="Submit">
+				  <div class="s-ev-num-nights d-none d-md-block"></div>
+				</form>
 			  </div>
 			</div>
 		  </div>
 		</div>
 	  </section>
 
+	  
 	<!-- Detailed About Us Section with cards and 2 long descriptions -->
 
     <section class="ftco-section ftco-about-section ftco-no-pb">
@@ -219,130 +263,108 @@
 
 	<section class="ftco-section testimony-section bg-light">
 		<div class="container-xl">
-			<div class="row justify-content-center pb-4">
-				<div class="col-md-7 text-center heading-section" data-aos="fade-up" data-aos-duration="1000"
-					data-aos-delay="100">
-					<span class="subheading">Testimonial</span>
-					<h2 class="mb-3">Happy Guests</h2>
-				</div>
+		  <div class="row justify-content-center pb-4">
+			<div class="col-md-7 text-center heading-section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+			  <span class="subheading">Testimonial</span>
+			  <h2 class="mb-3">Happy Guests</h2>
 			</div>
-			<div class="row">
-				<div class="col-md-12" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
-					<div class="carousel-testimony">
-						<div class="item">
-							<div class="testimony-wrap">
-								<div class="text">
-									<div class="d-flex align-items-center mb-4">
-										<div class="user-img"
-											style="background-image: url(https://randomuser.me/api/portraits/women/73.jpg)">
-											<div class="icon d-flex align-items-center justify-content-center"><span
-													class="fa fa-quote-left"></span></div>
-										</div>
-										<div class="ps-3 tx">
-											<p class="name">August 2020</p>
-											<span class="position">Tranquility &amp; Comfort</span>
-										</div>
-									</div>
-									<p class="mb-2 msg">We had a wonderful week in the Barn. The hosts were super friendly
-										and on hand if we
-										had any questions or looking for recommendations. Superbly located so you could walk
-										to Praa Sands or
-										relax in the garden...</p>
-								</div>
-							</div>
+		  </div>
+		  <div class="row">
+			<div class="col-md-12" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
+			  <div class="carousel-testimony">
+				<div class="item">
+				  <div class="testimony-wrap">
+					<div class="text">
+					  <div class="d-flex align-items-center mb-4">
+						<div class="user-img" style="background-image: url(https://randomuser.me/api/portraits/women/73.jpg)">
+						  <div class="icon d-flex align-items-center justify-content-center"><span
+							  class="fa fa-quote-left"></span></div>
 						</div>
-						<div class="item">
-							<div class="testimony-wrap">
-								<div class="text">
-									<div class="d-flex align-items-center mb-4">
-										<div class="user-img"
-											style="background-image: url(https://randomuser.me/api/portraits/men/40.jpg)">
-											<div class="icon d-flex align-items-center justify-content-center"><span
-													class="fa fa-quote-left"></span></div>
-										</div>
-										<div class="ps-3 tx">
-											<p class="name">August 2021</p>
-											<span class="position">A Short Break to relax!</span>
-										</div>
-									</div>
-									<p class="mb-2 msg">Excellent hosts. Welcoming and friendly. Comfortable and well
-										appointed in a super garden overlooking a lake, with a range of outdoor seating
-										areas and a lovely summerhouse. Fantastic
-										location.</p>
-								</div>
-							</div>
+						<div class="ps-3 tx">
+						  <p class="name">August 2020</p>
+						  <span class="position">Tranquility &amp; Comfort</span>
 						</div>
-						<div class="item">
-							<div class="testimony-wrap">
-								<div class="text">
-									<div class="d-flex align-items-center mb-4">
-										<div class="user-img"
-											style="background-image: url(https://randomuser.me/api/portraits/women/84.jpg)">
-											<div class="icon d-flex align-items-center justify-content-center"><span
-													class="fa fa-quote-left"></span></div>
-										</div>
-										<div class="ps-3 tx">
-											<p class="name">September 2020</p>
-											<span class="position">Quiet &amp; Peaceful</span>
-										</div>
-									</div>
-									<p class="mb-2 msg">We stayed in Tresowes Green Cottage with beautiful surroundings in a
-										little slice of
-										heaven. Comfortable bed and perfectly formed cottage with great facilities. Hosts
-										were very
-										accommodating and friendly.</p>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testimony-wrap">
-								<div class="text">
-									<div class="d-flex align-items-center mb-4">
-										<div class="user-img"
-											style="background-image: url(https://randomuser.me/api/portraits/men/5.jpg)">
-											<div class="icon d-flex align-items-center justify-content-center"><span
-													class="fa fa-quote-left"></span></div>
-										</div>
-										<div class="ps-3 tx">
-											<p class="name">August 2019</p>
-											<span class="position">The perfect Hosts!</span>
-										</div>
-									</div>
-									<p class="mb-2 msg">Situated in lovely grounds, The Barn was cosy and ideally placed.
-										The hosts were
-										nice and so helpful. Kingsize bed was really comfy after a long day out and the
-										walk-in wet room was
-										great! Excellent WiFi & smart TV too.</p>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testimony-wrap">
-								<div class="text">
-									<div class="d-flex align-items-center mb-4">
-										<div class="user-img"
-											style="background-image: url(https://randomuser.me/api/portraits/women/81.jpg)">
-											<div class="icon d-flex align-items-center justify-content-center"><span
-													class="fa fa-quote-left"></span></div>
-										</div>
-										<div class="ps-3 tx">
-											<p class="name">July 2019</p>
-											<span class="position">Fabulous Cottage</span>
-										</div>
-									</div>
-									<p class="mb-2 msg">The Cottage is beautiful and very well appointed with everything we
-										needed. The
-										gardens are amazing and so peaceful. Leslie and Johnny were hospitable and helpful
-										with lots of advice
-										on where to visit and to do...</p>
-								</div>
-							</div>
-						</div>
+					  </div>
+					  <p class="mb-2 msg">We had a wonderful week in the Barn. The hosts were super friendly and on hand if we
+						had any questions or looking for recommendations. Superbly located so you could walk to Praa Sands or
+						relax in the garden...</p>
 					</div>
+				  </div>
 				</div>
+				<div class="item">
+				  <div class="testimony-wrap">
+					<div class="text">
+					  <div class="d-flex align-items-center mb-4">
+						<div class="user-img" style="background-image: url(https://randomuser.me/api/portraits/men/40.jpg)">
+						  <div class="icon d-flex align-items-center justify-content-center"><span
+							  class="fa fa-quote-left"></span></div>
+						</div>
+						<div class="ps-3 tx">
+						  <p class="name">August 2021</p>
+						  <span class="position">A Short Break to relax!</span>
+						</div>
+					  </div>
+					  <p class="mb-2 msg">Excellent hosts. Welcoming and friendly. Comfortable and well appointed in a super garden overlooking a lake, with a range of outdoor seating areas and a lovely summerhouse. Fantastic
+					  location.</p>
+					</div>
+				  </div>
+				</div>
+				<div class="item">
+				  <div class="testimony-wrap">
+					<div class="text">
+					  <div class="d-flex align-items-center mb-4">
+						<div class="user-img" style="background-image: url(https://randomuser.me/api/portraits/women/84.jpg)">
+						  <div class="icon d-flex align-items-center justify-content-center"><span
+							  class="fa fa-quote-left"></span></div>
+						</div>
+						<div class="ps-3 tx">
+						  <p class="name">July 2022</p>
+						  <span class="position">Quiet &amp; Peaceful</span>
+						</div>
+					  </div>
+					  <p class="mb-2 msg">A very nice cottage, a complete kitchen, a beautifully modern shower, a very good bed and a fantastic garden with many seating possibilities. What more could you possibly want on your holiday? The hosts Johnny and Lesly are very friendly and helpful and give many good tips. We had a wonderful week in Cornwall.</p>
+					</div>
+				  </div>
+				</div>
+				<div class="item">
+				  <div class="testimony-wrap">
+					<div class="text">
+					  <div class="d-flex align-items-center mb-4">
+						<div class="user-img" style="background-image: url(https://randomuser.me/api/portraits/men/5.jpg)">
+						  <div class="icon d-flex align-items-center justify-content-center"><span
+							  class="fa fa-quote-left"></span></div>
+						</div>
+						<div class="ps-3 tx">
+						  <p class="name">September 2022</p>
+						  <span class="position">The perfect Hosts!</span>
+						</div>
+					  </div>
+					  <p class="mb-2 msg">Leslie & Johnny are brilliant hosts, providing top quality accomodation in an idylic corner of Cornwall. The Barn is so comfortable and cosy, well equipped with everything to make a holiday relaxing and enjoyable holiday.</p>
+					</div>
+				  </div>
+				</div>
+				<div class="item">
+				  <div class="testimony-wrap">
+					<div class="text">
+					  <div class="d-flex align-items-center mb-4">
+						<div class="user-img" style="background-image: url(https://randomuser.me/api/portraits/women/81.jpg)">
+						  <div class="icon d-flex align-items-center justify-content-center"><span
+							  class="fa fa-quote-left"></span></div>
+						</div>
+						<div class="ps-3 tx">
+						  <p class="name">October 2022</p>
+						  <span class="position">Fabulous Cottage</span>
+						</div>
+					  </div>
+					  <p class="mb-2 msg">We chose Tresowes because it is ideally located to enjoy the best that Cornwall has to offer, all within very easy reach. We weren't disappointed! Everything about it was fantastic and of all the places we've stayed in Cornwall, Tresowes was by far the best. We'll definitely be back.</p>
+					</div>
+				  </div>
+				</div>
+			  </div>
 			</div>
+		  </div>
 		</div>
-	</section>
+	  </section>
 	  
   <!-- Gallery Slider with glightbox-->
 
@@ -505,9 +527,17 @@
 	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
  
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.js" integrity="sha512-D/zaRVk05q6ERt1JgWB49kL6tyerY7a94egaVv6ObiGcw3OCEv0tvoPDEsVqL28HyAZhDd483ix8gkWQGDgEKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+	  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"
+	  integrity="sha256-hlKLmzaRlE8SCJC1Kw8zoUbU8BxA+8kR3gseuKfMjxA=" crossorigin="anonymous"></script>
+	  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css">
+
 	  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
 	  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	  <script src="js/slider.js"></script>
+	  <script src="js/search-bar.js"></script>
 	  <script src="js/main.js"></script>
 
 
