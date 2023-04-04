@@ -6,7 +6,12 @@
 		<lastmod>2023-04-04</lastmod>
 	</url>
 	<url>
-		<loc>https://www.tresowesgreencottage.com/the-cottage.html</loc>
+		<loc>https://www.tresowesgreencottage.com/about.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2023-04-04</lastmod>
+	</url>
+	<url>
+		<loc>https://www.tresowesgreencottage.com/privacy-policy.html</loc>
 		<priority>0.50</priority>
 		<lastmod>2022-08-30</lastmod>
 	</url>
@@ -16,13 +21,8 @@
 		<lastmod>2022-08-30</lastmod>
 	</url>
 	<url>
-		<loc>https://www.tresowesgreencottage.com/privacy-policy.html</loc>
+		<loc>https://www.tresowesgreencottage.com/the-cottage.html</loc>
 		<priority>0.50</priority>
 		<lastmod>2022-08-30</lastmod>
-	</url>
-	<url>
-		<loc>https://www.tresowesgreencottage.com/about.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2023-04-04</lastmod>
 	</url>
 </urlset>

@@ -3,7 +3,7 @@
 	/*Search Bar font family*/
 	font-family: Helvetica, Sans-Serif;
 	/*Search Bar background colour*/
-	background-color: #ffffff;
+	background-color: #f9f9f9;
 	/*Search Bar inner space*/
 	padding: 10px;
 	/*Search Bar width*/
@@ -53,6 +53,8 @@
 	/*Input fields border colour*/
 	border: 1px solid #ededed;
 	border-radius: 0px;
+	color: black;
+	background-color: #ffffff;
 }
 
 .ev-searchbox .ev-options {
@@ -103,6 +105,12 @@
 		padding-left: 40%;
 		padding-right: 40%;
 		
+	}
+
+	.ev-searchbox .ev-select,
+	.ev-searchbox .ev-options,
+	.ev-searchbox .ev-button {
+		min-width: 300px;
 	}
 }
 
