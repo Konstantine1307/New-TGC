@@ -1,0 +1,200 @@
+---
+import { SEO } from 'astro-seo';
+import { pwaInfo } from 'virtual:pwa-info';
+import Footer from '../components/layout/Footer.astro';
+import NavigationBar from '@components/layout/NavigationBar.astro';
+import { ViewTransitions } from 'astro:transitions';
+
+export interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+
+const buildDate = __DATE__;
+
+const makeTitle = title
+  ? title + ' | ' + 'Tresowes Green Cottage'
+  : 'Tresowes Green Cottage - Your Cornwall Holiday Retreat';
+
+const makeDescription = description
+  ? description
+  : 'Discover a peaceful escape at Tresowes Green Cottage, offering two charming holiday rentals in Cornwall. Immerse yourself in the tranquility of our cottages and explore the beauty of the surrounding area. Plan your ideal Cornwall getaway today';
+---
+
+<!DOCTYPE html>
+<html lang='en' class='motion-safe:scroll-smooth'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <meta name='description' content={makeDescription} />
+    <meta
+      name='keywords'
+      content='Tresowes Green Cottage, vacation rental, holiday rental, Cornwall, Praa Sands'
+    />
+    <meta name='author' content='Johnny Farah' />
+    <meta name='generator' content={Astro.generator} />
+
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="icon" href="/favicn.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/pwa-192x192.png">
+    <link rel="mask-icon" href="/favicon.svg" color="#FFFFFF">
+
+
+
+	    <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-PB9F939');</script>
+        <!-- End Google Tag Manager -->
+
+<!-- Start cookieyes banner --> <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/5884f5f1e4d7c6b21a18ccf3/script.js"></script> <!-- End cookieyes banner -->
+    <link rel='stylesheet' href='/lib/css/lightbox.min.css' />
+    <link rel='stylesheet' href='/lib/css/swiper-bundle.min.css' />
+
+    <title>{title}</title>
+    <ViewTransitions />
+
+    <SEO 
+      title={makeTitle} 
+      description={makeDescription}
+      openGraph={{
+        basic: {
+          type: 'website',
+          title: 'Tresowes Green Cottage - Your Cornwall Holiday Retreat',
+          image: "/meta/opengraph.png",
+      },
+      image: {
+        alt: 'Tresowes Green Cottage Homepage screenshot'
+      },
+   
+    }}
+      />
+      {pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} />}
+      <script src='/src/pwa.ts'></script>
+
+    <style>
+      [x-cloak] {
+        display: none !important;
+      }
+    </style> 
+    
+  </head>
+
+
+
+
+  <body
+    class='overflow-hidden overflow-y-auto bg-gradient-light dark:bg-gradient-dark'
+  >
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PB9F939"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+    <NavigationBar />
+    <slot />
+    <Footer />
+
+
+
+    <style is:global>
+      @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+
+      * {
+        max-width: 100vw;
+      }
+
+      :root {
+        --color-primary: 197, 168, 128;
+        --color-border: inherit;
+        --color-box: 255 255 255;
+        --box-border: 229 231 235;
+        --box-sd: 226 232 240 / 0.5;
+        --box-nav: 15 23 42 / 0.9;
+        --box-nav-mob: 15 23 42 / 0.8;
+        --heading-1: 3 7 18;
+        --heading-2: 17 24 39;
+        --heading-3: 31 41 55;
+        --subheading: 17 24 39;
+      }
+
+      .dark {
+        /* --main-color-bg: 3 7 18; */
+        --color-border: inherit;
+        --color-box: 17 24 39;
+        --box-border: 243 244 246/0.1;
+        --box-sd: transparent;
+        --heading-1: 255 255 255;
+        --heading-2: 250 250 240;
+        --heading-3: 245 245 245;
+        --subheading: 197, 169, 129;
+      }
+
+      .hero-text-shadow {
+        text-shadow: 0px 0px 10px black;
+      }
+
+      .grid-wrapper {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-auto-rows: 200px;
+        grid-auto-flow: dense;
+      }
+      .grid-wrapper .wide {
+        grid-column: span 2;
+      }
+      .grid-wrapper .tall {
+        grid-row: span 2;
+      }
+      .grid-wrapper .big {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+
+      @media (max-width: 575.98px) {
+        .grid-wrapper {
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          grid-auto-rows: 150px;
+        }
+        .grid-wrapper .wide {
+          grid-column: span 1;
+        }
+        .grid-wrapper .tall {
+          grid-row: span 1;
+        }
+        .grid-wrapper .big {
+          grid-column: span 1;
+          grid-row: span 1;
+        }
+      }
+    </style>
+    <script is:inline src='/lib/js/lightbox-plus-jquery.min.js'></script>
+    <script is:inline src='/lib/js/swiper-bundle.min.js'></script>
+
+  </body>
+</html>
+
+<script is:inline>
+ 
+   new Swiper('.mySwiper', {
+    centeredSlides: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>

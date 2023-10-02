@@ -1,0 +1,136 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Hero from '@components/sections/Hero.astro';
+import Carousel from '@components/sections/Carousel.astro';
+import Container from '@components/elements/Container.astro';
+import Title from '@components/elements/Title.astro';
+
+import Masonry from '@components/sections/Masonry.astro';
+import CottageCard from '@components/cards/CottageCard.astro';
+import FacilityItem from '@components/elements/FacilityItem.astro';
+import OtherServices from '@components/cards/OtherServices.astro';
+import BookStayBanner from '@components/sections/BookStayBanner.astro';
+import Headings from '@components/elements/Headings.astro';
+
+import {
+  facilityCottage,
+  carouselCottage,
+  masonryCottage,
+} from 'src/constants';
+
+import theCottage from '@assets/images/the-cottage-exterior.webp';
+import barn from '@assets/images/the-barn-exterior.webp';
+import ParagraphsCard from '@components/cards/ParagraphsCard.astro';
+import Main from '@components/elements/Main.astro';
+
+
+const half_length = Math.floor(facilityCottage.length / 2);
+---
+
+<Layout
+  title='The Cottage at Tresowes Green Cottage - Enchanting 2-Bedroom Hideaway'
+  description='Discover The Cottage at Tresowes Green Cottage, an enchanting 2-bedroom cottage with a private garden area. Experience comfort and tranquility in this delightful Cornwall retreat, designed for the perfect getaway.'
+>
+  <Main>
+    <Hero
+      styleUrl={theCottage.src}
+      paragraph='Two Bedroom cottage'
+      title='The Cottage'
+      btnText='Find Out More'
+      btnHref='#find-out-more'
+      subheading='Welcome to Your Destination in South West Cornwall'
+      bannerTitle='The Cottage - two bedroom holiday rental'
+      bannerBtnText='Book Your Stay'
+    />
+
+    <Container className='mt-24'>
+      <section
+        class='grid grid-cols-1 md:grid-cols-3 mx-auto px-2'
+        id='find-out-more'
+      >
+        <div class='col-span-3 lg:col-span-2 mt-16'>
+          <Carousel carouselName={carouselCottage} />
+
+          <div class='grid grid-flow-row md:grid-flow-col mt-8 mb-5'>
+            <div class='text-heading-2 flex flex-col'>
+              <p class='font-light'>
+                <span class='font-bold'>Max:</span> 4 Adults
+              </p>
+              <p class='font-light'>
+                <span class='font-bold'>Size:</span> 80 m2
+              </p>
+            </div>
+            <div class='text-heading-2 flex flex-col'>
+              <p class='font-light'>
+                <span class='font-bold'>View:</span> Lake &amp; Garden Views
+              </p>
+              <p class='font-light'>
+                <span class='font-bold'>Bedroom:</span> 1 1 King Size bed or 2
+                Twin Beds + 1 Double bed + 1 Sofa bed
+              </p>
+            </div>
+          </div>
+          <ParagraphsCard
+            headingText='The Cottage'
+            paragraphs={[
+              {
+                text: 'The Cottage offers warm and cosy self catering accommodation with everything a family or friends would need for their holiday.',
+              },
+              {
+                text: ' This 2 bedrooms holiday cottage offers ample kitchen facilities, great shower, tranquil private and shared gardens in an area close to the beach.',
+              },
+              {
+                text: ' Kitchen, utility room, large open plan dining/sitting room with feature cast iron wood burning stove and sofa-bed, large walk-in shower room and separate toilet. In the first floor 2 bedrooms with views over the garden towards Wheal Grey Lake.',
+              },
+            ]}
+          />
+        </div>
+        <div class='col-span-3 lg:col-span-1 space-y-6 mt-12 lg:mt-0'>
+          <Title text='Facilites' variant='h3' className='text-center' />
+          <div
+            class='columns-2 colum mt-8 lg:mt-0 w-full pr-6 md:pr-0 lg:max-w-2xl mx-auto'
+          >
+            <ul class='space-y-6'>
+              {
+                facilityCottage.slice(0, half_length).map((text) => {
+                  return <FacilityItem {text} />;
+                })
+              }
+            </ul>
+            <ul class='space-y-6 mt-6'>
+              {
+                facilityCottage
+                  .slice(half_length, facilityCottage.length)
+                  .map((text) => {
+                    return <FacilityItem {text} />;
+                  })
+              }
+            </ul>
+          </div>
+          <OtherServices />
+        </div>
+      </section>
+    </Container>
+
+    <Container className='mb-12'>
+      <BookStayBanner
+        subheading=''
+        bannerTitle='Stay in your preferred Cottage'
+        bannerBtnText='Book Your Stay'
+      />
+
+      <div class='text-center my-16'>
+        <Headings text='Image Gallery' variant='h3' className='mb-12' />
+        <Masonry masonryName={masonryCottage} />
+      </div>
+
+      <CottageCard
+        title='The Barn'
+        description='Cosy one bedroom holiday rental with beautiful views over Wheal Grey Lake.'
+        href='/the-barn'
+        src={barn.src}
+        ariaLabel='Link to The Cottage - Two Bedroom Holiday Rental'
+      />
+    </Container>
+  </Main>
+</Layout>

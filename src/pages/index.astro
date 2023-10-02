@@ -1,0 +1,41 @@
+---
+import Layout from '@layouts/Layout.astro';
+
+import Testimonials from '@components/homeAbout/Testimonials.astro';
+import VideoSection from '@components/homeAbout/VideoSection.astro';
+import AboutUs from '@components/homeAbout/HomeAboutUs.astro';
+import ShowCottages from '@components/homeAbout/HomeCalloutCottages.astro';
+import Hero from '@components/sections/Hero.astro';
+import Services from '@components/sections/HomeServices.astro';
+import Gallery from '@components/homeAbout/Gallery.astro';
+
+import theLake from '@assets/images/home-the-lake.webp'
+import Main from '@components/elements/Main.astro';
+import PageSection from '@components/elements/PageSection.astro';
+---
+
+<Layout
+  title='Welcome to Tresowes Green Cottage - Your Cornwall Holiday Retreat'
+  description='Discover a peaceful escape at Tresowes Green Cottage, offering two charming holiday rentals in Cornwall. Immerse yourself in the tranquility of our cottages and explore the beauty of the surrounding area. Plan your ideal Cornwall getaway today.'
+>
+  <Main>
+    <Hero
+      styleUrl={theLake.src}
+      paragraph=' Enjoy your wonderful holidays with a getaway experience'
+      title='Most Relaxing Place in West Cornwall'
+      btnText='Get Started'
+      btnHref='#showcase'
+      subheading='welcome to your destination in cornwall'
+      bannerTitle='Find Your Best Cottage'
+      bannerBtnText='Book Your Stay'
+    />
+    <PageSection className='mt-24'>
+      <ShowCottages />
+      <AboutUs />
+      <Services />
+      <VideoSection />
+      <Testimonials />
+    </PageSection>
+    <Gallery />
+  </Main>
+</Layout>

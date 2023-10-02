@@ -1,0 +1,26 @@
+---
+import Icon from 'astro-icon';
+
+export interface Props {
+  paragraph: string;
+  className?: string;
+  iconName?: string
+}
+
+const { paragraph, className, iconName } = Astro.props;
+---
+
+<div
+  class='services w-full p-2 px-4 sm:py-10  md:py-12 mb-2 midsm:mb-0 md:mb-4 text-black bg-box-bg rounded-sm midmd:rounded-t-full midmd:rounded-br-full transition-all duration-300 drop-shadow-lg shadow-gray-100 dark:shadow-none hover:bg-primary group'
+>
+  <div class='icon mb-3 group-hover:text-white'>
+    <!-- <span
+      class=`fa-solid ${className} leading-5 text-2xl midsm:text-7xl text-primary group-hover:text-white`
+    ></span>  -->
+    <Icon name={iconName} class="h-8 md:h-20 w-full text-primary group-hover:text-white"/>
+
+  </div>
+  <div class='text-xl font-bold mb-1 dark:text-white group-hover:text-white'>
+    <p>{paragraph}</p>
+  </div>
+</div>

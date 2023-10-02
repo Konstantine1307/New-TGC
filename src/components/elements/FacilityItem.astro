@@ -1,0 +1,9 @@
+---
+export interface Props{
+    text:string,
+}
+const {text} = Astro.props
+---
+<li class='w-full ml-6 text-sm uppercase text-heading-3'>
+    {text}
+</li>

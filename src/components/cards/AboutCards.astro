@@ -1,0 +1,15 @@
+---
+import AboutCard from './AboutCard.astro';
+
+import type { Props as AboutCardProp } from './AboutCard.astro';
+
+type Props = {
+  aboutContents: AboutCardProp[];
+};
+
+const { aboutContents } = Astro.props;
+---
+
+<div class='flex flex-row gap-2 midmd:gap-6'>
+  {aboutContents.map((content) => <AboutCard {...content} />)}
+</div>

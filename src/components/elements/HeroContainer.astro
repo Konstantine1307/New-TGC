@@ -1,0 +1,10 @@
+---
+export interface Props{
+    className?:string
+}
+
+const { className } = Astro.props
+---
+<div class={`mx-auto  w-full md:w-4/5 lg:max-w-7xl  bg-gradient-to-tr from-slate-100 via-gray-50 to-gray-500 dark:bg-gradient-to-b dark:from-slate-900 dark:to-slate-500  ${className}`}>
+    <slot/>
+</div>

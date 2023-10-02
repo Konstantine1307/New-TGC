@@ -1,0 +1,26 @@
+---
+import Container from '@components/elements/Container.astro';
+import ServiceIcon from '@components/cards/ServiceIcon.astro';
+import Subheading from '@components/elements/Subheading.astro';
+import Headings from '@components/elements/Headings.astro';
+---
+
+<Container className='text-center mb-10 p-8'>
+  <Subheading text='Unwind' />
+  <Headings
+    text='Some Of The Services We Offer'
+    className='mb-4'
+    variant='h3'
+  />
+</Container>
+<Container>
+  <div
+    class='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-y-3 gap-x-5 px-12 md:px-0 text-center mb-20'
+  >
+    <ServiceIcon iconName='mdi:basket' paragraph='Welcome Pack' />
+    <ServiceIcon iconName='mdi:wifi' paragraph='Free WiFi' />
+    <ServiceIcon iconName='mdi:parking' paragraph='Parking' />
+    <ServiceIcon iconName='mdi:room-service-outline' paragraph='Easy Booking' />
+    <ServiceIcon iconName='mdi:television' paragraph='Smart TV' />
+  </div>
+</Container>

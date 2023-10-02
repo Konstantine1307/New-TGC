@@ -1,0 +1,56 @@
+---
+export interface Props {
+ cottageName: string;
+ reviewMonth: string;
+ src: string;
+ largeText: string;
+ smallText: string;
+ variant: "gray700" | "gray500" | "gray200" | "boxNav" | "gray900"
+}
+const {
+    cottageName,
+    reviewMonth,
+    src,
+    largeText,
+    smallText,
+    variant
+} = Astro.props
+
+const getCardBackground = (variant: "gray700" | "gray500" | "gray200" | "boxNav" | "gray900") => {
+    if (variant === "gray900") {
+        return "bg-gray-900 md:col-span-2"
+    } else if (variant === "gray200") {
+        return "text-gray-900 bg-gray-200"
+    } else if (variant === "gray700") {
+        return "bg-gray-700"
+    } else if (variant === "gray500") {
+        return "bg-gray-500"
+    } else if (variant === "boxNav") {
+        return "bg-box-nav"
+    }
+   
+}
+--- 
+
+<div class=`p-4 rounded-xl ${getCardBackground(variant)}`>
+    <!-- Box Header -->
+    <div class="flex space-x-4">
+        <img
+            src={src}
+            alt="Guests reviews"
+            class="w-10 h-10 rounded-full ring-2 ring-purple-300"
+        />
+        <div>
+            <p class="font-semibold">{reviewMonth}</p>
+            <p class="text-lg">{cottageName}</p>
+        </div>
+    </div>
+
+    <!-- Large Text -->
+    <p class="mt-6 text-xl">{largeText}</p>
+
+    <!-- Small Text -->
+    <p class="mt-6 line-clamp-6">
+        {smallText}
+    </p>
+</div>

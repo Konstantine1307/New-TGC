@@ -1,0 +1,111 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Testimonials from '@components/homeAbout/Testimonials.astro';
+import Hero from '@components/sections/Hero.astro';
+import Gallery from '@components/homeAbout/Gallery.astro';
+import Container from '@components/elements/Container.astro';
+import ParagraphsCard from '@components/cards/ParagraphsCard.astro';
+import AboutCards from '@components/cards/AboutCards.astro';
+import Main from '@components/elements/Main.astro';
+
+import lakePath from '@assets/images/about-lake-path.webp';
+import oldGardens from '@assets/images/about-old-gardens.webp';
+import porthlevenFV from '@assets/images/about-porthleven-food-festival.webp';
+import bbqGarden from '@assets/images/about-bbq-garden.webp';
+import PageSection from '@components/elements/PageSection.astro';
+---
+
+<Layout
+  title='About Tresowes Green Cottage - Your Hosts and Cornwall Holiday Rentals'
+  description="Learn more about Tresowes Green Cottage, your serene Cornwall holiday destination. Discover the story of Leslie and Johnny, your gracious hosts, and the delightful holiday rental experiences they offer. Immerse yourself in Cornwall's charm with us."
+>
+  <Main>
+    <Hero
+      styleUrl='/images/full-image-tgc@0.5x.webp'
+      paragraph='Discover our journey'
+      title='About Us'
+      btnText='Get Started'
+      btnHref='#get-started'
+      subheading='"From the moment we first saw Tresowes Green Cottage we knew we had found a gem and it was a place we wanted to both to live and to share with others."'
+      bannerTitle='Discover About us'
+      bannerBtnText='Book Your Stay'
+    />
+    <!-- About us -->
+    <PageSection className='mt-16' id='get-started'>
+      <Container className='grid grid-cols-1 midmd:grid-cols-2 gap-4 space-y-6'>
+        <ParagraphsCard
+          className='px-4 midmd:px-8'
+          headingText='Love At First Sight'
+          paragraphs={[
+            {
+              text: 'Since opening our accommodation to guests in 2012 we have been updating, refurbishing and changing the offering of our two holiday let in West Cornwall for The Barn and The Cottage.',
+            },
+            {
+              text: 'The peacefulness of this setting by the Wheal Grey Lake and its closeness to the spectacular coastline with its glorious beaches, hidden coves and wonderful amenities make it a wonderful place to live and visit.',
+            },
+          ]}
+        />
+        <AboutCards
+          aboutContents={[
+            {
+              title: 'Wheal Grey Lake',
+              description:
+                'The lake offers beautiful views and an ideal place to relax by after a day out.',
+              iconName: 'mdi:waves',
+              aboutCardImg: `${lakePath.src}`,
+            },
+            {
+              title: 'A few changes since we arrived',
+              description:
+                'We have been fortunate to welcome wonderful guests from all over the world, many of whom have returned again and again.',
+              iconName: 'mdi:update',
+              aboutCardImg: `${oldGardens.src}`,
+              className: 'order-2',
+            },
+          ]}
+        />
+      </Container>
+      <Container
+        className='grid grid-cols-1 midmd:grid-cols-2 gap-4 space-y-6 mt-16'
+      >
+        <ParagraphsCard
+          className='midmd:order-1 px-4 midmd:px-8'
+          headingText='Perfect Location'
+          paragraphs={[
+            {
+              text: 'Tresowes is located within a World Heritage Site due to its history of mining for tin, copper and china clay as well as its outstanding beauty. The hamlet itself is very quiet with only 48 dwellings, each set apart, providing privacy.',
+            },
+            {
+              text: "We are very conveniently located to visit such attractions as Porthleven, St Michael's Mount, Marazion, St Ives, Penzance, The Lizard, Lands End, Minack Theatre, Poldark Mine, numerous Gardens, Beaches and the Coastal Path.",
+            },
+            {
+              text: 'We are happy to make recommendations for places to eat and visit. Equally, if its a barbecue you want, we can recommend local markets to purchase fresh produce.',
+            },
+          ]}
+        />
+
+        <AboutCards
+          aboutContents={[
+            {
+              title: 'We love our guests',
+              description:
+                'Most of our guests comment on how they enjoy relaxing in the garden for breakfast and again in the evening with a drink after a day of surfing, swimming, fishing, gallery viewing and sightseeing.',
+              iconName: 'mdi:notebook-heart',
+              aboutCardImg: `${bbqGarden.src}`,
+            },
+            {
+              title: 'Local Gasgronomy & Exploring',
+              description:
+                'There are numerous award winning restaurants within easy distance so we would recommend guests have a car to maximise their enjoyment.',
+              iconName: 'mdi:glass-cocktail',
+              aboutCardImg: `${porthlevenFV.src}`,
+              className: 'order-2',
+            },
+          ]}
+        />
+      </Container>
+    </PageSection>
+    <Testimonials />
+    <Gallery />
+  </Main>
+</Layout>

@@ -1,0 +1,51 @@
+---
+import { Icon } from 'astro-icon';
+---
+
+<button
+  x-cloak x-show='false'
+  type='button'
+  class='fixed bottom-10 right-10 outline-none border-none'
+  aria-label='back to the the top button'
+  id='btn-back-to-top'
+>
+  <!-- <span class="fa-solid fa-circle-arrow-up text-4xl group-hover:text-white group-hover-transition-200"></span> -->
+  <Icon
+    name='mdi:arrow-up-bold-circle'
+    class='h-12 bg-primary hover:bg-box-bg hover:text-primary rounded-full transition-all duration-200'
+  />
+</button>
+
+<script is:inline>
+// Extracted function to handle scrolling and showing/hiding the back-to-top button
+function handleScroll() {
+  const mybutton = document.getElementById('btn-back-to-top') ;
+
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 50 ||
+      document.documentElement.scrollTop > 50
+    ) {
+      mybutton.style.display = 'block';
+    } else {
+      mybutton.style.display = 'none';
+    }
+  }
+
+  if (!window.scrollY) {
+    window.addEventListener('scroll', scrollFunction);
+  }
+
+  mybutton.addEventListener('click', () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  });
+
+  // Initialize button visibility
+  mybutton.style.display = 'none';
+}
+
+handleScroll(); // Initialize scroll handling
+</script>
+
+

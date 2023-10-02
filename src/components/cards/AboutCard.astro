@@ -1,0 +1,43 @@
+---
+import { Icon } from 'astro-icon';
+
+export interface Props {
+  title: string;
+  description: string;
+  iconName: string;
+  aboutCardImg: string;
+  className?: string;
+}
+
+const { title, description, iconName, aboutCardImg, className } = Astro.props;
+---
+
+<div class='w-full flex flex-col'>
+  <div
+    class=`p-5 sm:p-3 lg:p-8 rounded-3xl border border-box-border bg-box-bg shadow-lg shadow-box-shadow relative overflow-hidden ${className}`
+  >
+    <div class='rounded-xl bg-inherit p-3 text-heading-2 w-max relative'>
+      <span slot='icon'>
+        <Icon name={iconName} class='h-12 text-primary' />
+      </span>
+    </div>
+    <div class='mt-3 space-y-4 relative'>
+      <p class='text-lg font-semibold text-heading-2'>
+        {title}
+      </p>
+      <p class='text-heading-3 dark:font-thin'>
+        {description}
+      </p>
+    </div>
+  </div>
+
+  <div class='my-5'>
+    <img
+      src={aboutCardImg}
+      width={400}
+      height={300}
+      alt={title}
+      class='rounded-2xl'
+    />
+  </div>
+</div>

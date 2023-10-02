@@ -1,0 +1,35 @@
+---
+import Container from '@components/elements/Container.astro';
+import GalleryItem from '@components/elements/GalleryItem.astro';
+
+const { masonryName } = Astro.props;
+---
+
+<Container className='h-full w-full'>
+  <div class='grid-wrapper'>
+    {
+      masonryName.map(
+        (item: {
+          image: {
+            src: string;
+          };
+          imageSm: {
+            src: string;
+          };
+          title: string;
+          className: any;
+        }) => {
+          return (
+            <GalleryItem
+              largeImageHref={item.image.src}
+              smallImageBg={item.imageSm.src}
+              title={item.title}
+              className={`h-full ${item.className}`}
+              alt={item.title}
+            />
+          );
+        }
+      )
+    }
+  </div>
+</Container>

@@ -1,0 +1,68 @@
+---
+import GalleryItem from "@components/elements/GalleryItem.astro";
+
+import gardenSpringLg from "@assets/images/gallery-garden-spring.webp"
+import gardenSpringSm from "@assets/images/gallery-garden-spring@0.5x.webp"
+import summerHouseLg from "@assets/images/gallery-summerhouse.webp"
+import summerHouseSm from "@assets/images/gallery-summerhouse@0.5x.webp"
+import praaSandsLg from "@assets/images/gallery-praa-sands-sunset.webp"
+import praaSandsSm from "@assets/images/gallery-praa-sands-sunset@0.5x.webp"
+import treesLakeLg from "@assets/images/gallery-trees-lake.webp"
+import treesLakeSm from "@assets/images/gallery-trees-lake@0.5x.webp"
+import cottageGardenLg from "@assets/images/gallery-garden-cottage.webp"
+import cottageGardenSm from "@assets/images/gallery-garden-cottage@0.5x.webp"
+
+const footerGallery = [
+    {
+        imageLg: gardenSpringLg,
+        imageSm: gardenSpringSm,
+        title: "Spring flowers in the main garden area in Tresowes Green Cottage"
+    },
+    {
+        imageLg: summerHouseLg,
+        imageSm: summerHouseSm,
+        title: "Summerhouse with indoor seating and dining by the lake"
+    },
+    {
+        imageLg: praaSandsLg,
+        imageSm: praaSandsSm,
+        title: "Sunset at Praa Sands Beach only 3 minutes by car from Tresowes Green Cottage"
+    },
+    {
+        imageLg: treesLakeLg,
+        imageSm: treesLakeSm,
+        title: "Trees and lake from the gardens in Tresowes Green Cottage"
+    },
+    {
+        imageLg: cottageGardenLg,
+        imageSm: cottageGardenSm,
+        title: "Patio and garden area in The Cottage - two bedroom Holiday Rental",
+        className: "col-span-2 midmd:col-span-1"
+    },
+]
+---
+
+<section
+    class="border border-box-border bg-box-bg shadow-lg shadow-box-shadow rounded-md py-4 md:py-6 mb-4"
+>
+    <div class="w-full px-4 md:px-4">
+        <div class="grid grid-cols-2 midsm:grid-cols-2 midmd:grid-cols-5 gap-3 ">
+                 
+                {footerGallery.map((item) => {
+                    return <GalleryItem
+                    largeImageHref={item.imageLg.src}
+                    smallImageBg={item.imageSm.src}
+                    title={item.title}
+                    alt={item.title}
+                    className={`w-full h-52 ${item.className}`}
+                    />
+                })}
+         
+        </div>
+    </div>
+</section>
+
+
+
+
+

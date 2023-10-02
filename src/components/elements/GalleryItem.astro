@@ -1,0 +1,32 @@
+---
+import { Icon } from 'astro-icon';
+
+export interface Props {
+  largeImageHref: string;
+  smallImageBg: string;
+  title: string;
+  className?: string;
+  key?: number;
+  alt: string;
+}
+
+const { largeImageHref, smallImageBg, title, className } = Astro.props;
+---
+
+<div class={className}>
+  <a
+    data-lightbox="tgc-gallery"
+    href={largeImageHref}
+    class=`relative z-0 mb-4 block bg-cover bg-no-repeat bg-center glightbox2 rounded-lg after:rounded-lg after:absolute after:top-0 after:left-0 after:bottom-0 after:right-0 after:content content-[''] after:-z-10 after:bg-black after:opacity-0 after:hover:opacity-30 after:ease-in-out after:transition after:duration-300 group ${className}`
+    style=`background-image: url("${smallImageBg}");`
+    title={title}
+  >
+    <div
+      class=`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transform w-10 h-10 opacity-0 rounded-full bg-primary flex items-center justify-center group-hover:opacity-100 group:hover:ease-in-out group:hover-transition group:hover-duration-300`
+    >
+     <Icon name="mdi:magnify" class="h-6 text-white"/>
+    </div>
+  </a>
+</div>
+
+
