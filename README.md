@@ -9,6 +9,5 @@ Welcome to the Tresowes Green Cottage website! This site showcases the beauty an
 Tresowes Green Cottage offers a picturesque getaway in Cornwall, providing you with a delightful holiday experience. Whether you're looking for a peaceful retreat, stunning views, or modern amenities, our cottage has it all.
 
 Feel free to check 
-# tgc-astro-tailwind
 
 
