@@ -15,6 +15,7 @@
   "dependencies": {
     "@astro-community/astro-embed-youtube": "^0.4.1",
     "@astrojs/alpinejs": "^0.3.0",
+    "@astrojs/cloudflare": "^7.4.0",
     "@astrojs/sitemap": "^3.0.0",
     "@astrojs/tailwind": "^5.0.0",
     "@types/alpinejs": "^3.13.2",

@@ -2,8 +2,9 @@ import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import alpinejs from '@astrojs/alpinejs';
 import AstroPWA from '@vite-pwa/astro';
-
 import sitemap from "@astrojs/sitemap";
+
+import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
@@ -47,5 +48,7 @@ export default defineConfig({
       enabled: true,
       navigateFallbackAllowlist: [/^\/404$/]
     }
-  }), sitemap()]
+  }), sitemap()],
+  output: "server",
+  adapter: cloudflare()
 });
